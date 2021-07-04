@@ -21,30 +21,30 @@ public class WBFirstFragment extends android.support.v4.app.Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_wb_first, null);
 
-        Button bt01 = view.findViewById(R.id.bt01);
-        bt01.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (getActivity() instanceof WeiboActivity) {
-                    ((WeiboActivity) getActivity()).getNavigationBar().setMsgPointCount(2, 109);
-                    ((WeiboActivity) getActivity()).getNavigationBar().setMsgPointCount(0, 5);
-                    ((WeiboActivity) getActivity()).getNavigationBar().setHintPoint(3, true);
-                }
-            }
-        });
+//        Button bt01 = view.findViewById(R.id.bt01);
+//        bt01.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                if (getActivity() instanceof WeiboActivity) {
+//                    ((WeiboActivity) getActivity()).getNavigationBar().setMsgPointCount(2, 109);
+//                    ((WeiboActivity) getActivity()).getNavigationBar().setMsgPointCount(0, 5);
+//                    ((WeiboActivity) getActivity()).getNavigationBar().setHintPoint(3, true);
+//                }
+//            }
+//        });
 
 
-        Button bt02 = view.findViewById(R.id.bt02);
-        bt02.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (getActivity() instanceof WeiboActivity) {
-                    ((WeiboActivity) getActivity()).getNavigationBar().clearAllHintPoint();
-                    ((WeiboActivity) getActivity()).getNavigationBar().clearAllMsgPoint();
-                }
-
-            }
-        });
+//        Button bt02 = view.findViewById(R.id.bt02);
+//        bt02.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                if (getActivity() instanceof WeiboActivity) {
+//                    ((WeiboActivity) getActivity()).getNavigationBar().clearAllHintPoint();
+//                    ((WeiboActivity) getActivity()).getNavigationBar().clearAllMsgPoint();
+//                }
+//
+//            }
+//        });
 //
 //        Button bt03 = view.findViewById(R.id.bt03);
 //        bt03.setOnClickListener(new View.OnClickListener() {

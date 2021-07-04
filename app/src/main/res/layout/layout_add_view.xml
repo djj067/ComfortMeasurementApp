@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:clickable="true"
@@ -14,7 +15,7 @@
         android:layout_marginTop="30dp"
         android:gravity="center"
         android:includeFontPadding="false"
-        android:text="2"
+        android:text="11"
         android:textColor="#666666"
         android:textSize="60sp"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -26,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:gravity="center"
-        android:text="Wednesday"
+        android:text="Friday"
         android:textSize="14sp"
         android:textColor="#666666"
         android:layout_marginTop="10dp"
@@ -47,11 +48,12 @@
         app:layout_constraintLeft_toRightOf="@+id/day_tv" />
 
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="4dp"
         android:layout_marginTop="8dp"
-        android:text="Singapore:   Thunderstorm  30°C"
+        android:text="Singapore:   Sunny  30°C"
         android:textColor="#666666"
         android:textSize="14sp"
         app:layout_constraintLeft_toLeftOf="@+id/day_tv"
@@ -80,12 +82,102 @@
             android:src="@mipmap/cancel" />
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/icon_group"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/cancel_ll">
+    <ImageView
+        android:clickable="true"
+        android:id="@+id/imageView3"
+        android:layout_width="118dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="364dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="76dp"
+        app:layout_constraintBottom_toTopOf="@+id/cancel_ll"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/yes" />
 
-    </LinearLayout>
+    <ImageView
+        android:clickable="true"
+        android:id="@+id/imageView5"
+        android:layout_width="123dp"
+        android:layout_height="167dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="254dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="141dp"
+        app:layout_constraintBottom_toTopOf="@+id/cancel_ll"
+        app:layout_constraintEnd_toStartOf="@+id/imageView6"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/today" />
+
+    <ImageView
+        android:clickable="true"
+        android:id="@+id/imageView6"
+        android:layout_width="128dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="486dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="56dp"
+        app:layout_constraintBottom_toTopOf="@+id/cancel_ll"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/otherday" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="44dp"
+        android:text="Yesterday"
+        app:layout_constraintBottom_toTopOf="@+id/cancel_ll"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="90dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="86dp"
+        android:text="Today"
+        app:layout_constraintBottom_toTopOf="@+id/cancel_ll"
+        app:layout_constraintEnd_toStartOf="@+id/imageView6"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="213dp"
+        android:layout_marginLeft="213dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginRight="42dp"
+        android:layout_marginBottom="37dp"
+        android:text="Otherday"
+        app:layout_constraintBottom_toTopOf="@+id/cancel_ll"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+
 </android.support.constraint.ConstraintLayout>

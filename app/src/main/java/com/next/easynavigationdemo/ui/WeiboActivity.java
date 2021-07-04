@@ -4,6 +4,7 @@ import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
@@ -45,9 +46,9 @@ public class WeiboActivity extends AppCompatActivity {
 
 
     //仿微博图片和文字集合
-    private int[] menuIconItems = {R.mipmap.pic1, R.mipmap.pic2, R.mipmap.pic3, R.mipmap.pic4};
-    private String[] menuTextItems = {"Yesterday", "Today", "Tomorrow", "More"};
-
+    private int[] menuIconItems = {R.drawable.yes, R.drawable.today,R.drawable.otherday};
+    private String[] menuTextItems = {"Yesterday", "Today", "Other day"};
+    private ImageView yes,today,other;
     private LinearLayout menuLayout;
     private View cancelImageView;
     private Handler mHandler = new Handler();
@@ -112,7 +113,10 @@ public class WeiboActivity extends AppCompatActivity {
     //仿微博弹出菜单
     private View createWeiboView() {
         ViewGroup view = (ViewGroup) View.inflate(WeiboActivity.this, R.layout.layout_add_view, null);
-        menuLayout = view.findViewById(R.id.icon_group);
+        //menuLayout = view.findViewById(R.id.icon_group);
+        yes=findViewById(R.id.imageView3);
+        today=view.findViewById(R.id.imageView5);
+        other=findViewById(R.id.imageView6);
         cancelImageView = view.findViewById(R.id.cancel_iv);
         cancelImageView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -120,20 +124,29 @@ public class WeiboActivity extends AppCompatActivity {
                 closeAnimation();
             }
         });
-        for (int i = 0; i < 4; i++) {
-            View itemView = View.inflate(WeiboActivity.this, R.layout.item_icon, null);
-            ImageView menuImage = itemView.findViewById(R.id.menu_icon_iv);
-            TextView menuText = itemView.findViewById(R.id.menu_text_tv);
+//        for (int i = 0; i < 4; i++) {
+//            View itemView = View.inflate(WeiboActivity.this, R.layout.item_icon, null);
+//            ImageView menuImage = itemView.findViewById(R.id.menu_icon_iv);
+//            TextView menuText = itemView.findViewById(R.id.menu_text_tv);
+//
+//            menuImage.setImageResource(menuIconItems[i]);
+//            menuText.setText(menuTextItems[i]);
+//
+//            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
+//            params.weight = 1;
+//            itemView.setLayoutParams(params);
+//            itemView.setVisibility(View.GONE);
+//            menuLayout.addView(itemView);
+//        }
+        today.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(WeiboActivity.this,UpdateActivity.class);
+                startActivity(intent);
+            }
+        });
 
-            menuImage.setImageResource(menuIconItems[i]);
-            menuText.setText(menuTextItems[i]);
 
-            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
-            params.weight = 1;
-            itemView.setLayoutParams(params);
-            itemView.setVisibility(View.GONE);
-            menuLayout.addView(itemView);
-        }
         return view;
     }
 
@@ -148,23 +161,23 @@ public class WeiboActivity extends AppCompatActivity {
             }
         });
         //菜单项弹出动画
-        for (int i = 0; i < menuLayout.getChildCount(); i++) {
-            final View child = menuLayout.getChildAt(i);
-            child.setVisibility(View.INVISIBLE);
-            mHandler.postDelayed(new Runnable() {
-
-                @Override
-                public void run() {
-                    child.setVisibility(View.VISIBLE);
-                    ValueAnimator fadeAnim = ObjectAnimator.ofFloat(child, "translationY", 600, 0);
-                    fadeAnim.setDuration(500);
-                    KickBackAnimator kickAnimator = new KickBackAnimator();
-                    kickAnimator.setDuration(500);
-                    fadeAnim.setEvaluator(kickAnimator);
-                    fadeAnim.start();
-                }
-            }, i * 50 + 100);
-        }
+//        for (int i = 0; i < menuLayout.getChildCount(); i++) {
+//            final View child = menuLayout.getChildAt(i);
+//            child.setVisibility(View.INVISIBLE);
+//            mHandler.postDelayed(new Runnable() {
+//
+//                @Override
+//                public void run() {
+//                    child.setVisibility(View.VISIBLE);
+//                    ValueAnimator fadeAnim = ObjectAnimator.ofFloat(child, "translationY", 600, 0);
+//                    fadeAnim.setDuration(500);
+//                    KickBackAnimator kickAnimator = new KickBackAnimator();
+//                    kickAnimator.setDuration(500);
+//                    fadeAnim.setEvaluator(kickAnimator);
+//                    fadeAnim.start();
+//                }
+//            }, i * 50 + 100);
+//        }
     }
 
 

@@ -5,19 +5,19 @@
     android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <Button
-        android:id="@+id/bt01"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="Incoming message"
-        android:onClick="click01" />
+<!--    <Button-->
+<!--        android:id="@+id/bt01"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:text="Incoming message"-->
+<!--        android:onClick="click01" />-->
 
-    <Button
-        android:id="@+id/bt02"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:onClick="clear"
-        android:text="After read" />
+<!--    <Button-->
+<!--        android:id="@+id/bt02"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:onClick="clear"-->
+<!--        android:text="After read" />-->
 
     <!--    <Button-->
 <!--        android:id="@+id/bt03"-->
