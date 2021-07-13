@@ -5,79 +5,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="340dp"
+        android:layout_height="59dp"
         android:layout_marginStart="161dp"
         android:layout_marginLeft="161dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="192dp"
         android:layout_marginRight="192dp"
-        android:layout_marginBottom="30dp"
-        android:text="Rate your comfort!"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTime"
+        android:autoSizePresetSizes="@array/autosize_text_sizes"
+        android:autoSizeTextType="uniform"
+        android:text="ACTIVITY LEVELS"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/time"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-<!--    <LinearLayout-->
-<!--        android:id="@+id/linearLayout"-->
-<!--        android:layout_width="409dp"-->
-<!--        android:layout_height="366dp"-->
-<!--        android:layout_marginEnd="2dp"-->
-<!--        android:layout_marginRight="2dp"-->
-<!--        android:layout_marginBottom="1dp"-->
-<!--        android:orientation="vertical"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="1.0"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/editTextTime"-->
-<!--        app:layout_constraintVertical_bias="1.0">-->
-
-<!--        <CheckBox-->
-<!--            android:id="@+id/checkbox"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:onClick="onCheckboxClicked"-->
-<!--            android:tag="chb1"-->
-<!--            android:text="复选1" />-->
-
-<!--        <CheckBox-->
-<!--            android:id="@+id/checkbox2"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:onClick="onCheckboxClicked"-->
-<!--            android:text="复选2" />-->
-
-<!--        <CheckBox-->
-<!--            android:id="@+id/checkbox3"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:onClick="onCheckboxClicked"-->
-<!--            android:tag="chb3"-->
-<!--            android:text="复选3" />-->
-
-<!--        <CheckBox-->
-<!--            android:id="@+id/checkbox4"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:onClick="onCheckboxClicked"-->
-<!--            android:text="复选4" />-->
-
-<!--    </LinearLayout>-->
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <CheckBox
         android:id="@+id/checkbox"
         android:layout_width="110dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="42dp"
-        android:layout_marginLeft="42dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
         android:layout_marginTop="14dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
         android:layout_marginBottom="62dp"
         android:onClick="onCheckboxClicked"
         android:tag="chb1"
@@ -94,8 +50,8 @@
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="14dp"
-        android:layout_marginEnd="52dp"
-        android:layout_marginRight="52dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
         android:layout_marginBottom="26dp"
         android:onClick="onCheckboxClicked"
         android:text="standing"
@@ -111,8 +67,8 @@
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="14dp"
-        android:layout_marginEnd="52dp"
-        android:layout_marginRight="52dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
         android:layout_marginBottom="62dp"
         android:onClick="onCheckboxClicked"
         android:tag="chb3"
@@ -126,11 +82,11 @@
         android:id="@+id/checkbox4"
         android:layout_width="110dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginLeft="52dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
         android:layout_marginTop="14dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
         android:layout_marginBottom="29dp"
         android:onClick="onCheckboxClicked"
         android:text="exercising"
@@ -139,66 +95,49 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/run" />
 
-    <EditText
-        android:id="@+id/editTextTime"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
-        android:layout_marginLeft="35dp"
-        android:layout_marginTop="22dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginBottom="21dp"
-        android:ems="10"
-        android:inputType="time"
-        app:layout_constraintBottom_toTopOf="@+id/textView7"
-        app:layout_constraintEnd_toStartOf="@+id/textView7"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="227dp"
-        android:layout_height="72dp"
+        android:layout_width="327dp"
+        android:layout_height="68dp"
         android:layout_marginStart="92dp"
         android:layout_marginLeft="92dp"
-        android:layout_marginTop="80dp"
         android:layout_marginEnd="147dp"
         android:layout_marginRight="147dp"
         android:layout_marginBottom="145dp"
         android:text="Select all the activities you have done in the past 6 hours"
+        android:textSize="23sp"
         app:layout_constraintBottom_toTopOf="@+id/checkbox2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTime" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/run"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginLeft="52dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
         android:layout_marginTop="25dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
         android:layout_marginBottom="15dp"
         app:layout_constraintBottom_toTopOf="@+id/checkbox4"
         app:layout_constraintEnd_toStartOf="@+id/imageView7"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7"
-        tools:srcCompat="@drawable/run" />
+        tools:srcCompat="@drawable/run1"
+        tools:visibility="visible" />
 
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
         android:layout_marginTop="25dp"
-        android:layout_marginEnd="52dp"
-        android:layout_marginRight="52dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
         android:layout_marginBottom="14dp"
         app:layout_constraintBottom_toTopOf="@+id/checkbox2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -210,15 +149,14 @@
         android:id="@+id/imageView8"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginLeft="52dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
         android:layout_marginTop="23dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
         android:layout_marginBottom="14dp"
         app:layout_constraintBottom_toTopOf="@+id/checkbox"
-        app:layout_constraintEnd_toStartOf="@+id/checkbox3"
-        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintEnd_toStartOf="@+id/imageView9"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkbox4"
         app:srcCompat="@drawable/sofa" />
@@ -227,11 +165,11 @@
         android:id="@+id/imageView9"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
         android:layout_marginTop="22dp"
-        android:layout_marginEnd="52dp"
-        android:layout_marginRight="52dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
         android:layout_marginBottom="14dp"
         app:layout_constraintBottom_toTopOf="@+id/checkbox3"
         app:layout_constraintEnd_toEndOf="parent"
@@ -240,65 +178,157 @@
         app:layout_constraintTop_toBottomOf="@+id/checkbox2"
         app:srcCompat="@drawable/walk" />
 
-    <!--    <ImageView-->
-<!--        android:id="@+id/smile"-->
-<!--        android:layout_width="129dp"-->
-<!--        android:layout_height="148dp"-->
-<!--        android:layout_marginStart="3dp"-->
-<!--        android:layout_marginLeft="3dp"-->
-<!--        android:layout_marginEnd="29dp"-->
-<!--        android:layout_marginRight="29dp"-->
-<!--        android:layout_marginBottom="255dp"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toStartOf="@+id/meh"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/textView7"-->
-<!--        app:srcCompat="@drawable/smile" />-->
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="260dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginRight="130dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/imageView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkbox2">
 
-<!--    <ImageView-->
-<!--        android:id="@+id/meh"-->
-<!--        android:layout_width="106dp"-->
-<!--        android:layout_height="137dp"-->
-<!--        android:layout_marginStart="29dp"-->
-<!--        android:layout_marginLeft="29dp"-->
-<!--        android:layout_marginTop="20dp"-->
-<!--        android:layout_marginEnd="35dp"-->
-<!--        android:layout_marginRight="35dp"-->
-<!--        android:layout_marginBottom="246dp"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toStartOf="@+id/cry"-->
-<!--        app:layout_constraintStart_toEndOf="@+id/smile"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/textView7"-->
-<!--        app:srcCompat="@drawable/mehfilling" />-->
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="＜1hour" />
 
-<!--    <ImageView-->
-<!--        android:id="@+id/cry"-->
-<!--        android:layout_width="109dp"-->
-<!--        android:layout_height="148dp"-->
-<!--        android:layout_marginStart="20dp"-->
-<!--        android:layout_marginLeft="20dp"-->
-<!--        android:layout_marginTop="328dp"-->
-<!--        android:layout_marginBottom="255dp"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toEndOf="@+id/meh"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:srcCompat="@drawable/cry" />-->
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1-2hours" />
 
-<!--    <Button-->
-<!--        android:id="@+id/button"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginStart="166dp"-->
-<!--        android:layout_marginLeft="166dp"-->
-<!--        android:layout_marginTop="154dp"-->
-<!--        android:layout_marginEnd="157dp"-->
-<!--        android:layout_marginRight="157dp"-->
-<!--        android:layout_marginBottom="44dp"-->
-<!--        android:text="Submit"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/meh" />-->
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=">2hours" />
 
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radiogroup2"
+        android:layout_width="260dp"
+        android:layout_height="38dp"
+        tools:layout_editor_absoluteX="273dp"
+        tools:layout_editor_absoluteY="471dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/imageView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkbox2">>
+        <RadioButton
+            android:id="@+id/radioButton7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="＜1hour" />
+
+        <RadioButton
+            android:id="@+id/radioButton8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1-2hours" />
+
+        <RadioButton
+            android:id="@+id/radioButton9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=">2hours" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="250dp"
+        android:layout_height="62dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="14dp"
+        android:text="time"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="71dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="264dp"
+        android:layout_marginRight="264dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toStartOf="@+id/forward"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ico_back" />
+
+    <ImageView
+        android:id="@+id/forward"
+        android:layout_width="72dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginBottom="664dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ico_forward" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="87dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintEnd_toStartOf="@+id/textView6"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.45"
+        app:srcCompat="@drawable/calendar" />
+
+    <ImageView
+        android:id="@+id/submit"
+        android:layout_width="95dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/checkbox3"
+        app:layout_constraintStart_toEndOf="@+id/checkbox"
+        app:layout_constraintTop_toBottomOf="@+id/checkbox"
+        app:srcCompat="@drawable/submit" /><![CDATA[
+
+
+
+    />
+
+
+
+
+]]>
 </android.support.constraint.ConstraintLayout>

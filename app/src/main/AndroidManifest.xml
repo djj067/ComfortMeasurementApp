@@ -9,21 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name="com.next.easynavigationdemo.ui.DemoListActivity">
+        <activity android:name=".ui.Physical"></activity>
+        <activity android:name=".ui.Functionality" />
+        <activity android:name=".ui.DemoListActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.next.easynavigationdemo.ui.NormalActivity" />
-        <activity android:name="com.next.easynavigationdemo.ui.WeiboActivity" />
-        <activity android:name="com.next.easynavigationdemo.ui.AddAsFragmentActivity" />
-        <activity android:name="com.next.easynavigationdemo.ui.AddViewActivity" />
+        <activity android:name=".ui.NormalActivity" />
+        <activity android:name=".ui.WeiboActivity" />
+        <activity android:name=".ui.AddAsFragmentActivity" />
+        <activity android:name=".ui.AddViewActivity" />
         <activity android:name=".ui.OnlyNavigationActivity" />
         <activity android:name=".ui.SetUpViewPagerActivity" />
         <activity android:name=".ui.AllActivity" />
-        <activity android:name=".ui.UpdateActivity"/>
+        <activity android:name=".ui.UpdateActivity" />
     </application>
 
 </manifest>

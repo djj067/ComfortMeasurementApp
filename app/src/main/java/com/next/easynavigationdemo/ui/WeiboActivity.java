@@ -2,10 +2,7 @@ package com.next.easynavigationdemo.ui;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
-import android.animation.ObjectAnimator;
-import android.animation.ValueAnimator;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
@@ -14,7 +11,6 @@ import android.view.ViewAnimationUtils;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.next.easynavigation.constant.Anim;
@@ -24,7 +20,6 @@ import com.next.easynavigationdemo.R;
 import com.next.easynavigationdemo.ui.weibo.WBFirstFragment;
 import com.next.easynavigationdemo.ui.weibo.WBSecondFragment;
 import com.next.easynavigationdemo.ui.weibo.AddThirdFragment;
-import com.next.easynavigationdemo.view.KickBackAnimator;
 
 import java.util.ArrayList;
 import java.util.List;
